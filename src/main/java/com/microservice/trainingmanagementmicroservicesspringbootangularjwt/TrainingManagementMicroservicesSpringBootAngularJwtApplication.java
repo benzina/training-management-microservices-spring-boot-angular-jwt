@@ -1,5 +1,9 @@
 package com.microservice.trainingmanagementmicroservicesspringbootangularjwt;
 
+import com.microservice.trainingmanagementmicroservicesspringbootangularjwt.Model.Student;
+import com.microservice.trainingmanagementmicroservicesspringbootangularjwt.Model.Training;
+import com.microservice.trainingmanagementmicroservicesspringbootangularjwt.dao.StudentRepository;
+import com.microservice.trainingmanagementmicroservicesspringbootangularjwt.dao.TrainingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -29,7 +33,7 @@ public class TrainingManagementMicroservicesSpringBootAngularJwtApplication impl
     public void run(String... args) throws Exception {
 
         /* for display each object id in json file*/
-        repositoryRestConfiguration.exposeIdsFor(Training.class,Student.class);
+        repositoryRestConfiguration.exposeIdsFor(Training.class, Student.class);
 
         Training training1=trainingRepository.save(new Training(null,"Genie Informatique",3,null));
         Training training2=trainingRepository.save(new Training(null,"Qualite Logiciel",3,null));

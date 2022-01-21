@@ -1,4 +1,4 @@
-package com.microservice.trainingmanagementmicroservicesspringbootangularjwt;
+package com.microservice.trainingmanagementmicroservicesspringbootangularjwt.Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
